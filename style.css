@@ -36,10 +36,10 @@ html, body, canvas {
 	color: #888;
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
-	html {
+@media only screen and (orientation:portrait){
+	body {
+	  height: 100vw;
 	  transform: rotate(90deg);
-	  transform-origin: center;	  	 
 	}
   }
 
