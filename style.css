@@ -39,7 +39,7 @@ html, body, canvas {
 @media only screen and (orientation:portrait){
 	body {	  
 	  transform: rotate(90deg);
-	  height: 1920px;
-	  width: 1080px;
+	  height: 100vw;
+	  width: 100vh;
 	}
   }
