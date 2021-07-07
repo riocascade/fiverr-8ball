@@ -36,10 +36,4 @@ html, body, canvas {
 	color: #888;
 }
 
-@media only screen and (orientation:portrait){
-	body {	  
-	  transform: rotate(90deg);
-	  height: 100vw;
-	  width: 100vh;
-	}
-  }
+
