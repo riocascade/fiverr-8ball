@@ -5262,7 +5262,6 @@ newY);wi.SetBboxChanged()}}else if(this._axes===1){if(wi.GetX()!==newX){wi.SetX(
 		C3.Plugins.Spritefont2.Acts.SetText,
 		C3.Plugins.Sprite.Cnds.CompareInstanceVar,
 		C3.Plugins.Sprite.Acts.SetAnim,
-		C3.Plugins.Sprite.Cnds.OnDestroyed,
 		C3.Plugins.Sprite.Acts.SetPos,
 		C3.Plugins.System.Exps.viewportleft,
 		C3.Plugins.Sprite.Exps.LayerName,
@@ -5295,7 +5294,7 @@ newY);wi.SetBboxChanged()}}else if(this._axes===1){if(wi.GetX()!==newX){wi.SetX(
 		C3.Plugins.Touch.Cnds.IsInTouch,
 		C3.Plugins.Sprite.Cnds.IsVisible,
 		C3.Plugins.Touch.Cnds.IsTouchingObject,
-		C3.Plugins.Browser.Cnds.IsFullscreen,
+		C3.Plugins.Browser.Cnds.IsPortraitLandscape,
 		C3.Plugins.Sprite.Acts.SetTowardPosition,
 		C3.Plugins.Touch.Exps.X,
 		C3.Plugins.Touch.Exps.Y,
@@ -5330,14 +5329,12 @@ newY);wi.SetBboxChanged()}}else if(this._axes===1){if(wi.GetX()!==newX){wi.SetX(
 		C3.Plugins.Sprite.Cnds.OnCollision,
 		C3.Plugins.Audio.Acts.PlayByName,
 		C3.Plugins.System.Exps.choose,
+		C3.Plugins.Sprite.Cnds.OnDestroyed,
 		C3.Plugins.Sprite.Cnds.CompareFrame,
 		C3.Behaviors.Physics.Acts.SetEnabled,
 		C3.Plugins.Sprite.Acts.MoveToLayer,
 		C3.Plugins.System.Acts.GoToLayout,
 		C3.Plugins.Sprite.Acts.SetInstanceVar,
-		C3.Plugins.Touch.Cnds.OnTouchStart,
-		C3.Plugins.Browser.Acts.RequestFullScreen,
-		C3.Plugins.Browser.Acts.LockOrientation,
 		C3.Plugins.Spritefont2.Cnds.IsVisible,
 		C3.Plugins.Audio.Acts.Preload,
 		C3.Plugins.Spritefont2.Exps.LayerName,
@@ -5358,10 +5355,10 @@ newY);wi.SetBboxChanged()}}else if(this._axes===1){if(wi.GetX()!==newX){wi.SetX(
 		C3.Plugins.Browser.Acts.CancelFullScreen,
 		C3.Plugins.System.Exps.windowwidth,
 		C3.Plugins.System.Exps.originalwindowwidth,
+		C3.Plugins.Touch.Cnds.OnTouchStart,
 		C3.Plugins.Sprite.Acts.SetScale,
 		C3.Plugins.Audio.Cnds.IsAnyPlaying,
 		C3.Plugins.Audio.Acts.StopAll,
-		C3.Plugins.Browser.Cnds.IsPortraitLandscape,
 		C3.Plugins.System.Acts.SetLayerVisible,
 		C3.Plugins.System.Acts.SetLayerOpacity,
 		C3.Plugins.System.Cnds.LayerCmpOpacity,
@@ -5632,7 +5629,6 @@ newY);wi.SetBboxChanged()}}else if(this._axes===1){if(wi.GetX()!==newX){wi.SetX(
 		() => "Each player scores only his own balls, player 1 balls without strip, player 2 balls with strip. Do not score a cue ball in pocket, as each such hit gets one foul. 3 fouls and the game will be discontinued. Ball number eight should be the last to score!",
 		() => "Player_2",
 		() => "Striped",
-		() => "Instructions",
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			const n1 = p._GetNode(1);
@@ -5847,8 +5843,6 @@ newY);wi.SetBboxChanged()}}else if(this._axes===1){if(wi.GetX()!==newX){wi.SetX(
 			return () => (v0.GetValue() + (v1.GetValue() / 1000));
 		},
 		() => "Pool 8 BallTop_Score",
-		() => "Lock Orientation Landscape",
-		() => 0.5,
 		p => {
 			const v0 = p._GetNode(0).GetVar();
 			return () => and("SCORE : ", v0.GetValue());
